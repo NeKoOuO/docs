@@ -39,7 +39,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ikaros-dev/docs/edit/master/',
+            'https://github.com/ikaros-dev/docs/edit/main/',
           editLocalizedFiles: true,
           // versions: {
           //   current: {
@@ -53,7 +53,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ikaros-dev/docs/edit/master/',
+            'https://github.com/ikaros-dev/docs/edit/main/',
           editLocalizedFiles: true,
           blogSidebarCount: 10,
         },
@@ -119,8 +119,12 @@ const config = {
                 href: "https://ikaros.run/wechat.png",
               },
               {
-                label: "Telegram Channel",
-                href: "https://t.me/run_ikaros_channel",
+                label: "Ikaros Status",
+                href: "https://status.ikaros.run/status/ikaros",
+              },
+              {
+                label: "Ikaros Analytics",
+                href: "https://analytics.ikaros.run/share/s5uHahQNqVtfKoPq/docs.ikaros.run",
               },
             ],
           },
@@ -133,8 +137,8 @@ const config = {
                 href: "https://github.com/ikaros-dev/ikaros/issues",
               },
               {
-                label: "GitHub Organization",
-                href: "https://github.com/ikaros-dev",
+                label: "Telegram Channel",
+                href: "https://t.me/run_ikaros_channel",
               },
               {
                 label: "Telegram Group",
@@ -142,7 +146,7 @@ const config = {
               },
               {
                 label: "QQ Chat Group",
-                href: "https://qm.qq.com/q/ogGuO2wmcw",
+                href: "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=78drHnTdkaGQHwAkt1eEU3JpxBfUeuPx&authKey=dvZ0CdZjiX36wKiDlDF0qKVcEDe7SNXfL%2BllKTIf%2FgiXNHwlWqTmlXTs%2BtLnB1un&noverify=0&group_code=413528874",
               },
             ],
           },
@@ -156,6 +160,13 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+    scripts: [
+      {
+        src: "https://analytics.ikaros.run/script.js",
+        async: true,
+        "data-website-id": "32a4e564-ed51-4818-937e-326248ce4691",
+      }
+    ]
 };
 
 module.exports = config;
